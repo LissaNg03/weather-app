@@ -35,13 +35,13 @@ export default function WeatherCard(props) {
 			if (weatherDescr === "Rain") {
 				// console.log(weatherDescr);
 
-				setWeatherImg("/public/WeatherAssets/heavy-rain.png");
+				setWeatherImg("/weather-app/WeatherAssets/heavy-rain.png");
 			} else if (weatherDescr === "Clouds") {
 				// console.log(weatherDescr);
-				setWeatherImg("/public/WeatherAssets/cloudy.png");
+				setWeatherImg("/weather-app/WeatherAssets/cloudy.png");
 			} else if (weatherDescr === "Clear") {
 				// console.log(weatherDescr);
-				setWeatherImg("/public/WeatherAssets/sun.png");
+				setWeatherImg("/weather-app/WeatherAssets/sun.png");
 			}
 
 			//Smaller Cards Data
@@ -105,7 +105,7 @@ export default function WeatherCard(props) {
 						<div className="hum-n-speed">
 							<div className="humidity">
 								<img
-									src="/public/WeatherAssets/humidity.png"
+									src="/weather-app/WeatherAssets/humidity.png"
 									alt=""
 									width={30}
 								/>
@@ -115,7 +115,11 @@ export default function WeatherCard(props) {
 								</div>
 							</div>
 							<div className="wind-speed">
-								<img src="/public/WeatherAssets/wind.png" alt="" width={30} />
+								<img
+									src="/weather-app/WeatherAssets/wind.png"
+									alt=""
+									width={30}
+								/>
 								<div>
 									<p>Wind Speed</p>
 									<h3>{windSpeed} km/h</h3>
